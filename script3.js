@@ -3,12 +3,12 @@
 //all images as object with category and wether propetires
 var wardrobepage2 = [
   {
-    img: "images/resized/Bag-removebg-preview.png",
+    img: "images/Resized/Bag-removebg-preview.png",
     category: "Outerwear",
     weather: "Cold",
   },
   {
-    img: "images/resized/sweaterknit-removebg-preview.png",
+    img: "images/Resized/sweaterknit-removebg-preview.png",
     category: "Tops",
     weather: "Cold",
   },
