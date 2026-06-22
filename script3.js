@@ -42,11 +42,13 @@ var wardrobepage2 = [
     category: "Outerwear",
     weather: "Cold",
   },
+
   {
     img: "images/Resized/Jacketserious1-removebg-preview.png",
     category: "Outerwear",
     weather: "Warm",
   },
+
   {
     img: "images/Resized/longsleevesport-removebg-preview.png",
     category: "Tops",
