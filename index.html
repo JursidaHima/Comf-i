@@ -2,85 +2,238 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <title>Comf i | Virtual Wardrobe</title>
+    <title>
+      Comf i | Virtual Wardrobe - Preview & Style Your Outfits Online
+    </title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-    </header>
     <header class="navbar">
       <div class="logo">Comf i</div>
-      <nav>
+      <nav aria-label="Main Navigation">
         <a href="#wardrobe-start">Wardrobe</a>
-        <a href="#">Outfits</a>
-        <a href="#">Favourites</a>
-         <!-- <span class="menu">☰</span> -->
+        <a href="wardrobe.html">Outfits</a>
+        <a href="wardrobe.html">Favourites</a>
       </nav>
     </header>
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Style your outfit Virtually</h1>
-        <p>Mix-match and preview outfits based on weather</p>
-        <a class="a-styling"  href="wardrobe.html"> Start styling </a>
-      <!--    onclick="document .getElementById('wardrobe-start') .scrollIntoView({ behavior: 'smooth' })
-          " -->
-      </div>
-       <div class="hero-images" >
-         <img class="h-image" src="images/heroop1.jpg" />
-        <img class="h-image" src="images/hero2.jpg" />
-        <img class="h-image" src="images/hero3.jpg" />
-      </div>
-    </section>
-    <div class="section-title" id="wardrobe-start">Preview your wardrobe</div>
-     
-       <div class="items"  id="material">
-        <img  class="g-image" src="images/jacketleather.png" />
-        <img class="g-image" src="images/coatwinter.png" />
-        <img class="g-image" src="images/Bag.png" />
-        <img class="g-image" src="images/tshirt2.jpg" />
-        <img class="g-image" src="images/longsleevesport.jpg" />
-        <img class="g-image" src="images/Hoodie.jpg" />
-        <img class="g-image" src="images/jacketjeans.jpg" />
-        <img class="g-image" src="images/shortj.png" />
-        <img class="g-image" src="images/botttuta1.jpg" />
-        <img class="g-image" src="images/bottjeans1.png" />
-         <img class="g-image" src="images/dressserious.png" />
-        <img class="g-image" src="images/coatrain.jpg" />
-        <img class="g-image" src="images/bagheart.jpg" />
-        <img class="g-image" src="images/shoesblack.jpg" />
-        <img class="g-image" src="images/blouse.png" />
-         <img class="g-image" src="images/skirt.png" />
-        <img class="g-image" src="images/hoodieopen.jpg" />
-        <img class="g-image" src="images/Jacketserious1.jpg" />
-        <img class="g-image" src="images/shoessandale.jpg" />
-         <img class="g-image" src="images/dressopen.jpg" />
-         <img class="g-image" src="images/botttutaser.jpg" />
-        <img class="g-image" src="images/skirtblue.jpg" />
-         <img class="g-image" src="images/coatsoft.jpg" />
-        <img class="g-image" src="images/sweaterknit.jpg" />
-        <img class="g-image" src="images/Tshirtmusic.jpg" />
-        <img class="g-image" src="images/Tshirtf1.jpg" />
-        <img class="g-image" src="images/bottWhiteJeans.png" />
-        <img class="g-image" src="images/logsleeveopen.jpg" />
-        <img class="g-image" src="images/LinenBlousef1.jpg" />
-        <img class="g-image" src="images/dresswinter.jpg" />
-        <img class="g-image" src="images/Jumpswit.png" />
-        <img class="g-image" src="images/longsleevecasual.jpg" />
-        <img class="g-image" src="images/shoestaka.jpg" />
-      </div>
-    <div class="move-Btns">
-  <button id="prev-Btn">Previous</button>
-  <button id="next-Btn">Next</button>
-</div>
-      
-  
+
+    <main>
+      <section class="hero" aria-label="Introduction">
+        <div class="hero-text">
+          <h1>Style your outfit Virtually</h1>
+          <p>Mix-match and preview outfits based on weather</p>
+          <a class="a-styling" href="wardrobe.html">Start styling</a>
+        </div>
+        <div class="hero-images">
+          <img
+            class="h-image"
+            src="images/heroop1.jpg"
+            alt="Fashion lookbook casual autumn outfit styling"
+          />
+          <img
+            class="h-image"
+            src="images/hero2.jpg"
+            alt="Fashion lookbook winter outerwear garment styling"
+          />
+          <img
+            class="h-image"
+            src="images/hero3.jpg"
+            alt="Fashion lookbook warm summer attire styling"
+          />
+        </div>
+      </section>
+
+      <section aria-labelledby="wardrobe-start">
+        <h2 class="section-title" id="wardrobe-start">
+          Preview Wardrobe Collection
+        </h2>
+        <div class="items" id="wardrobe-container"></div>
+      </section>
+
+      <section aria-label="Wardrobe Grid Items">
+        <div class="items" id="material">
+          <img
+            class="g-image"
+            src="images/jacketleather.png"
+            alt="Black Classic Leather Jacket"
+          />
+          <img
+            class="g-image"
+            src="images/coatwinter.png"
+            alt="Heavy Long Winter Coat"
+          />
+          <img
+            class="g-image"
+            src="images/Bag.png"
+            alt="Leather Shoulder Handbag"
+          />
+          <img
+            class="g-image"
+            src="images/tshirt2.jpg"
+            alt="Casual Cotton T-Shirt"
+          />
+          <img
+            class="g-image"
+            src="images/longsleevesport.jpg"
+            alt="Athletic Long-Sleeve Shirt"
+          />
+          <img
+            class="g-image"
+            src="images/Hoodie.jpg"
+            alt="Comfortable Oversized Hoodie"
+          />
+          <img
+            class="g-image"
+            src="images/jacketjeans.jpg"
+            alt="Blue Denim Jean Jacket"
+          />
+          <img
+            class="g-image"
+            src="images/shortj.png"
+            alt="Casual Denim Shorts"
+          />
+          <img
+            class="g-image"
+            src="images/botttuta1.jpg"
+            alt="Comfy Fleece Sweatpants"
+          />
+          <img
+            class="g-image"
+            src="images/bottjeans1.png"
+            alt="Classic Blue Denim Jeans"
+          />
+          <img
+            class="g-image"
+            src="images/dressserious.png"
+            alt="Elegant Formal Evening Dress"
+          />
+          <img
+            class="g-image"
+            src="images/coatrain.jpg"
+            alt="Waterproof Yellow Raincoat"
+          />
+          <img
+            class="g-image"
+            src="images/bagheart.jpg"
+            alt="Heart Patterned Handbag"
+          />
+          <img
+            class="g-image"
+            src="images/shoesblack.jpg"
+            alt="Formal Black Leather Shoes"
+          />
+          <img
+            class="g-image"
+            src="images/blouse.png"
+            alt="Elegant Silk Blouse"
+          />
+          <img
+            class="g-image"
+            src="images/skirt.png"
+            alt="Casual A-Line Skirt"
+          />
+          <img
+            class="g-image"
+            src="images/hoodieopen.jpg"
+            alt="Zip-Up Sporty Hoodie"
+          />
+          <img
+            class="g-image"
+            src="images/Jacketserious1.jpg"
+            alt="Tailored Formal Blazer Jacket"
+          />
+          <img
+            class="g-image"
+            src="images/shoessandale.jpg"
+            alt="Open-Toed Summer Sandals"
+          />
+          <img
+            class="g-image"
+            src="images/dressopen.jpg"
+            alt="Casual Flowing Summer Dress"
+          />
+          <img
+            class="g-image"
+            src="images/botttutaser.jpg"
+            alt="Tailored Smart Casual Trousers"
+          />
+          <img
+            class="g-image"
+            src="images/skirtblue.jpg"
+            alt="Blue Pleated Skirt"
+          />
+          <img
+            class="g-image"
+            src="images/coatsoft.jpg"
+            alt="Soft Pastel Trench Coat"
+          />
+          <img
+            class="g-image"
+            src="images/sweaterknit.jpg"
+            alt="Warm Cozy Knit Sweater"
+          />
+          <img
+            class="g-image"
+            src="images/Tshirtmusic.jpg"
+            alt="Graphic Music Band T-Shirt"
+          />
+          <img
+            class="g-image"
+            src="images/Tshirtf1.jpg"
+            alt="Athletic Fit Sporty T-Shirt"
+          />
+          <img
+            class="g-image"
+            src="images/bottWhiteJeans.png"
+            alt="Slim-Fit White Denim Jeans"
+          />
+          <img
+            class="g-image"
+            src="images/logsleeveopen.jpg"
+            alt="Button-Up Long Sleeve Shirt"
+          />
+          <img
+            class="g-image"
+            src="images/LinenBlousef1.jpg"
+            alt="Lightweight Summer Linen Blouse"
+          />
+          <img
+            class="g-image"
+            src="images/dresswinter.jpg"
+            alt="Long Sleeve Knit Winter Dress"
+          />
+          <img
+            class="g-image"
+            src="images/Jumpswit.png"
+            alt="Modern One-Piece Jumpsuit"
+          />
+          <img
+            class="g-image"
+            src="images/longsleevecasual.jpg"
+            alt="Casual Crewneck Long Sleeve Shirt"
+          />
+          <img
+            class="g-image"
+            src="images/shoestaka.jpg"
+            alt="Casual Streetwear Running Sneakers"
+          />
+        </div>
+
+        <div class="move-Btns">
+          <button id="prev-Btn">Previous</button>
+          <button id="next-Btn">Next</button>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <p>©2026 Comf i</p>
-      <a href="#" class="foot">About</a>
-      <a href="#" class="foot">Contact</a>
-    
+      <a href="#" class="foot" aria-label="Learn more about Comf i">About</a>
+      <a href="#" class="foot" aria-label="Get in touch with Comf i support"
+        >Contact</a
+      >
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

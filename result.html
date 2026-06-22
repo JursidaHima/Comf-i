@@ -2,36 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Comfi - Result</title>
+    <title>Outfit Saved Successfully | Comf i Virtual Wardrobe</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- PS DONT MIND THIS  -->
   </head>
   <body>
     <header class="navbar">
-      <div class="logo">Comf i</div>
-      <nav>
-        <a>Wardrobe</a>
-        <a>Outfits</a>
-        <a>Favourites</a>
+      <div class="logo">
+        <a href="index.html" style="text-decoration: none; color: inherit"
+          >Comf i</a
+        >
+      </div>
+      <nav aria-label="Main Navigation">
+        <a href="wardrobe.html">Wardrobe</a>
+        <a href="wardrobe.html">Outfits</a>
+        <a href="wardrobe.html">Favourites</a>
         <!-- <span class="menu">☰</span> -->
       </nav>
     </header>
 
-    <section class="result-container">
-      <div class="result-image">
-        <img src="images/manequin wirth dress.jpg" alt="Saved Outfit" />
-      </div>
+    <main>
+      <section class="result-container" aria-label="Saved Outfit Review">
+        <div class="result-image">
+          <img
+            src="images/manequin wirth dress.jpg"
+            alt="Finalized custom outfit combination shown on virtual mannequin"
+          />
+        </div>
 
-      <div class="result-content">
-        <h1 class="outfit-name">All Black Lady</h1>
-        <div class="success-banner">Outfit Saved Successfully!</div>
-      </div>
-    </section>
+        <div class="result-content">
+          <h1 class="outfit-name">All Black Lady</h1>
+          <div class="success-banner" role="status" aria-live="polite">
+            Outfit Saved Successfully!
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <p>©2026 Comf i</p>
-      <a href="#" class="foot">About</a>
-      <a href="#" class="foot">Contact</a>
+      <a href="#" class="foot" aria-label="Learn more about Comf i">About</a>
+      <a href="#" class="foot" aria-label="Get in touch with Comf i support"
+        >Contact</a
+      >
     </footer>
   </body>
 </html>

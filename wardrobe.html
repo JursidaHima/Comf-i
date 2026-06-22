@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Comf i -Style</title>
+    <title>Interactive Styling Room | Comf i Virtual Wardrobe</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,196 +12,345 @@
           >Comf i</a
         >
       </div>
-      <nav>
-        <a>Wardrobe</a>
-        <a>Outfits</a>
-        <a>Favourites</a>
-        <!-- <span class="menu">☰</span> -->
+      <nav aria-label="Main Navigation">
+        <a href="wardrobe.html" aria-current="page">Wardrobe</a>
+        <a href="wardrobe.html">Outfits</a>
+        <a href="wardrobe.html">Favourites</a>
       </nav>
     </header>
 
-    <div class="main-layout">
-      <!-- left -->
-      <aside class="sidebar">
-        <h3>Filter items to match your day</h3>
+    <main class="main-layout">
+      <aside class="sidebar" aria-label="Wardrobe Filters">
+        <h2>Filter items to match your day</h2>
 
-        <div class="filter-group">
-          <p>Category</p>
-          <label
-            ><input type="checkbox" class="category" value="Tops" /> Tops</label
-          >
-          <label
-            ><input type="checkbox" class="category" value="Bottoms" />
-            Bottoms</label
-          >
-          <label
-            ><input type="checkbox" class="category" value="One piece" /> One
-            piece</label
-          >
-          <label
-            ><input type="checkbox" class="category" value="Outerwear" />
-            Outerwear</label
-          >
-        </div>
+        <fieldset class="filter-group">
+          <legend>Category</legend>
+          <label>
+            <input type="checkbox" class="category" value="Tops" /> Tops
+          </label>
+          <label>
+            <input type="checkbox" class="category" value="Bottoms" /> Bottoms
+          </label>
+          <label>
+            <input type="checkbox" class="category" value="One piece" /> One
+            piece
+          </label>
+          <label>
+            <input type="checkbox" class="category" value="Outerwear" />
+            Outerwear
+          </label>
+        </fieldset>
 
-        <div class="filter-group">
-          <p>Weather</p>
-          <label
-            ><input type="checkbox" class="weather" value="Warm" /> Warm</label
-          >
-          <label
-            ><input type="checkbox" class="weather" value="Cold" /> Cold</label
-          >
-          <label
-            ><input type="checkbox" class="weather" value="Rainy" />
-            Rainy</label
-          >
-        </div>
+        <fieldset class="filter-group">
+          <legend>Weather</legend>
+          <label>
+            <input type="checkbox" class="weather" value="Warm" /> Warm
+          </label>
+          <label>
+            <input type="checkbox" class="weather" value="Cold" /> Cold
+          </label>
+          <label>
+            <input type="checkbox" class="weather" value="Rainy" /> Rainy
+          </label>
+        </fieldset>
       </aside>
 
-      <!-- center -->
-      <section class="builder">
+      <section class="builder" aria-label="Available Wardrobe Items Selection">
         <h3 class="title">Click items to add to your outfit</h3>
 
         <div class="rows" id="items-container">
-          <div class="item">
-            <img src="images/Jumpswit-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/blouse-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/bottjeans1-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/dressserious-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/coatwinter-removebg-preview.png" />
-          </div>
-          <div class="item"><img src="images/Bag-removebg-preview.png" /></div>
-          <div class="item">
-            <img src="images/tshirt2-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/jacketleather-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/longsleevesport-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/Hoodie-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/jacketjeans-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/shortj-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/botttuta1-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/coatrain-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/bagheart-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/shoesblack-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/blouse-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/skirt-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/hoodieopen-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/Jacketserious1-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/shoessandale-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/dressopen-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/botttutaser-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/skirtblue-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/coatsoft-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/sweaterknit-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/Tshirtmusic-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/Tshirtf1-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/shoestaka-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/bottWhiteJeans-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/logsleeveopen-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/LinenBlousef1-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/dresswinter-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/logsleeveopen-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/shoeswhite-removebg-preview.png" />
-          </div>
-          <div class="item">
-            <img src="images/longsleevecasual-removebg-preview.png" />
-          </div>
+          <button type="button" class="item" aria-label="Select Jumpsuit">
+            <img
+              src="images/Jumpswit-removebg-preview.png"
+              alt="Modern One-Piece Jumpsuit"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Silk Blouse">
+            <img
+              src="images/blouse-removebg-preview.png"
+              alt="Elegant Silk Blouse"
+            />
+          </button>
+          <button
+            type="button"
+            class="item"
+            aria-label="Select Blue Denim Jeans"
+          >
+            <img
+              src="images/bottjeans1-removebg-preview.png"
+              alt="Classic Blue Denim Jeans"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Evening Dress">
+            <img
+              src="images/dressserious-removebg-preview.png"
+              alt="Elegant Formal Evening Dress"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Winter Coat">
+            <img
+              src="images/coatwinter-removebg-preview.png"
+              alt="Heavy Long Winter Coat"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Handbag">
+            <img
+              src="images/Bag-removebg-preview.png"
+              alt="Leather Shoulder Handbag"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Casual T-Shirt">
+            <img
+              src="images/tshirt2-removebg-preview.png"
+              alt="Casual Cotton T-Shirt"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Leather Jacket">
+            <img
+              src="images/jacketleather-removebg-preview.png"
+              alt="Black Classic Leather Jacket"
+            />
+          </button>
+          <button
+            type="button"
+            class="item"
+            aria-label="Select Sport Long-Sleeve"
+          >
+            <img
+              src="images/longsleevesport-removebg-preview.png"
+              alt="Athletic Long-Sleeve Shirt"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Comfy Hoodie">
+            <img
+              src="images/Hoodie-removebg-preview.png"
+              alt="Comfortable Oversized Hoodie"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Jean Jacket">
+            <img
+              src="images/jacketjeans-removebg-preview.png"
+              alt="Blue Denim Jean Jacket"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Jean Shorts">
+            <img
+              src="images/shortj-removebg-preview.png"
+              alt="Casual Denim Shorts"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Sweatpants">
+            <img
+              src="images/botttuta1-removebg-preview.png"
+              alt="Comfy Fleece Sweatpants"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Raincoat">
+            <img
+              src="images/coatrain-removebg-preview.png"
+              alt="Waterproof Yellow Raincoat"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Heart Handbag">
+            <img
+              src="images/bagheart-removebg-preview.png"
+              alt="Heart Patterned Handbag"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Black Shoes">
+            <img
+              src="images/shoesblack-removebg-preview.png"
+              alt="Formal Black Leather Shoes"
+            />
+          </button>
+          <button
+            type="button"
+            class="item"
+            aria-label="Select Patterned Blouse"
+          >
+            <img
+              src="images/blouse-removebg-preview.png"
+              alt="Alternative Style Blouse"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select A-Line Skirt">
+            <img
+              src="images/skirt-removebg-preview.png"
+              alt="Casual A-Line Skirt"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Zip-Up Hoodie">
+            <img
+              src="images/hoodieopen-removebg-preview.png"
+              alt="Zip-Up Sporty Hoodie"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Blazer">
+            <img
+              src="images/Jacketserious1-removebg-preview.png"
+              alt="Tailored Formal Blazer Jacket"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Sandals">
+            <img
+              src="images/shoessandale-removebg-preview.png"
+              alt="Open-Toed Summer Sandals"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Summer Dress">
+            <img
+              src="images/dressopen-removebg-preview.png"
+              alt="Casual Flowing Summer Dress"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Smart Trousers">
+            <img
+              src="images/botttutaser-removebg-preview.png"
+              alt="Tailored Smart Casual Trousers"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Blue Skirt">
+            <img
+              src="images/skirtblue-removebg-preview.png"
+              alt="Blue Pleated Skirt"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Trench Coat">
+            <img
+              src="images/coatsoft-removebg-preview.png"
+              alt="Soft Pastel Trench Coat"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Knit Sweater">
+            <img
+              src="images/sweaterknit-removebg-preview.png"
+              alt="Warm Cozy Knit Sweater"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Band T-Shirt">
+            <img
+              src="images/Tshirtmusic-removebg-preview.png"
+              alt="Graphic Music Band T-Shirt"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Sport T-Shirt">
+            <img
+              src="images/Tshirtf1-removebg-preview.png"
+              alt="Athletic Fit Sporty T-Shirt"
+            />
+          </button>
+          <button
+            type="button"
+            class="item"
+            aria-label="Select Running Sneakers"
+          >
+            <img
+              src="images/shoestaka-removebg-preview.png"
+              alt="Casual Streetwear Running Sneakers"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select White Jeans">
+            <img
+              src="images/bottWhiteJeans-removebg-preview.png"
+              alt="Slim-Fit White Denim Jeans"
+            />
+          </button>
+          <button
+            type="button"
+            class="item"
+            aria-label="Select Long Sleeve Button-Up"
+          >
+            <img
+              src="images/logsleeveopen-removebg-preview.png"
+              alt="Button-Up Long Sleeve Shirt"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Linen Blouse">
+            <img
+              src="images/LinenBlousef1-removebg-preview.png"
+              alt="Lightweight Summer Linen Blouse"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Winter Dress">
+            <img
+              src="images/dresswinter-removebg-preview.png"
+              alt="Long Sleeve Knit Winter Dress"
+            />
+          </button>
+          <button
+            type="button"
+            class="item"
+            aria-label="Select Long Sleeve Shirt"
+          >
+            <img
+              src="images/logsleeveopen-removebg-preview.png"
+              alt="Casual Long Sleeve Top"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Canvas Shoes">
+            <img
+              src="images/shoeswhite-removebg-preview.png"
+              alt="Flat White Canvas Shoes"
+            />
+          </button>
+          <button type="button" class="item" aria-label="Select Crewneck Top">
+            <img
+              src="images/longsleevecasual-removebg-preview.png"
+              alt="Casual Crewneck Long Sleeve Shirt"
+            />
+          </button>
         </div>
 
         <div class="g2-move-Btns">
-          <button id="g2-prevBtn">&lt;</button>
-          <button id="g2-nextBtn">&gt;</button>
+          <button id="g2-prevBtn" aria-label="Previous Items Page">&lt;</button>
+          <button id="g2-nextBtn" aria-label="Next Items Page">&gt;</button>
         </div>
       </section>
-      <!-- right -->
-      <aside class="preview">
+
+      <aside class="preview" aria-label="Mannequin Outfit Preview">
         <div class="model-wrapper">
-          <!-- <img src="images/MODMOD-removebg-preview.png" class="model-base" /> -->
-
-          <img id="layer-Bottoms" class="clothes-layer" src="" />
-          <img id="layer-Tops" class="clothes-layer" src="" />
-          <img id="layer-One-piece" class="clothes-layer" src="" />
-          <img id="layer-Outerwear" class="clothes-layer" src="" />
+          <img
+            id="layer-Bottoms"
+            class="clothes-layer"
+            src=""
+            alt="Selected Bottom Layer"
+          />
+          <img
+            id="layer-Tops"
+            class="clothes-layer"
+            src=""
+            alt="Selected Top Layer"
+          />
+          <img
+            id="layer-One-piece"
+            class="clothes-layer"
+            src=""
+            alt="Selected One-Piece Dress Layer"
+          />
+          <img
+            id="layer-Outerwear"
+            class="clothes-layer"
+            src=""
+            alt="Selected Outerwear Jacket Layer"
+          />
         </div>
-
+        <!-- <div class="btn-group">
+          <button id="save-outfit" class="btn-secondary">Save Outfit</button>
+        </div> -->
         <div class="btn-group">
-          <!-- <button id="save-btn" class="btn-primary">
-            <a href="result.html" class="last">Save Outfit</a>
-          </button> -->
           <button id="reset-outfit" class="btn-secondary">Reset Outfit</button>
         </div>
       </aside>
-    </div>
+    </main>
+
     <script src="script3.js"></script>
 
     <footer>
       <p>©2026 Comf i</p>
-      <a href="#" class="foot">About</a>
-      <a href="#" class="foot">Contact</a>
+      <a href="#" class="foot" aria-label="Learn more about Comf i">About</a>
+      <a href="#" class="foot" aria-label="Get in touch with Comf i support"
+        >Contact</a
+      >
     </footer>
   </body>
 </html>

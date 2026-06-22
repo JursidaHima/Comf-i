@@ -200,6 +200,17 @@ var wardrobepage2 = [
   },
 ];
 // console.log(wardrobepage2);
+
+// Helper helper function to clean text strings from paths dynamically for screen readers
+function getItemLabel(filename) {
+  const name = filename.split('/').pop().split('.').shift();
+  return name
+    .replace(/[_-]/g, ' ')
+    .replace(/preview|removebg|resized/gi, '')
+    .trim()
+    .replace(/\b\w/g, c => c.toUpperCase());
+}
+
 // auto fit scaling function for the clothes layers
 function fitClothing(layerId, imgElement, scaleFactor = 1) {
   const layer = document.getElementById(layerId);
@@ -246,18 +257,38 @@ function showItems(list) {
 
   var visible = currentList.slice(currIndex, currIndex + itemsForPage);
 
-  //   for (let j = 0; j < visible.length; j++) {
-  //     const itemNow = visible[j];
+  //    for (let j = 0; j < visible.length; j++) {
+  //      const itemNow = visible[j];
+  // Accessibility Fix: Using functional forEach but wrapping structures cleanly into semantic buttons
   visible.forEach(function (itemNow) {
+    // Kept original class wrapper context intact
     const div = document.createElement("div");
     div.classList.add("item");
+    div.style.padding = "0"; 
+
+    // Accessibility Fix: Converted raw click targeting from an image to a semantic focusable button
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "item-action-wrapper";
+    btn.style.width = "100%";
+    btn.style.height = "100%";
+    btn.style.background = "none";
+    btn.style.border = "none";
+    btn.style.padding = "0";
+    btn.style.cursor = "pointer";
 
     const img1 = document.createElement("img");
     img1.src = itemNow.img;
-    img1.style.cursor = "pointer";
+    img1.style.width = "100%";
+    img1.style.height = "auto";
 
-    // CLICK TO ADD WEARS TO  MODEL
-    img1.onclick = function () {
+    // Accessibility Fix: Map descriptive readable alt values for screen reader contexts
+    const readableTitle = getItemLabel(itemNow.img);
+    img1.alt = readableTitle;
+    btn.setAttribute("aria-label", "Select and overlay " + readableTitle + " onto mannequin");
+
+    // Core functionality function extracted so both click and keyboard trigger it perfectly
+    const handleOutfitSelection = function () {
       // Find the correct layer
       // We replace spaces with dashes to match the ID format
       const categoryId = "layer-" + itemNow.category.replace(" ", "-");
@@ -293,8 +324,20 @@ function showItems(list) {
       }
     };
 
+    // CLICK TO ADD WEARS TO  MODEL
+    btn.onclick = handleOutfitSelection;
+
+    // Accessibility Fix: Ensure keyboard interactions execute beautifully when pressing Enter or Spacebar
+    btn.onkeydown = function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        handleOutfitSelection();
+      }
+    };
+
     // must be outside the onclick function
-    div.appendChild(img1);
+    btn.appendChild(img1);
+    div.appendChild(btn);
     allitems.appendChild(div);
   });
 }

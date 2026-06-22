@@ -84,6 +84,16 @@ var wardrobe = [
 ];
 // console.log(wardrobe);
 
+// Helper mapping function to automatically generate human-friendly labels for screen readers
+function getItemLabel(filename) {
+  const name = filename.split("/").pop().split(".").shift();
+  return name
+    .replace(/[_-]/g, " ")
+    .replace(/preview|removebg/gi, "")
+    .trim()
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
 // define the current index and how many items we want to see for page
 var currentIndex = 0;
 var itemsPage = 5;
@@ -100,24 +110,48 @@ function showImages() {
     const item = visibleItems[i]; //Get the current object from the array
     // console.log("The first 5 items are: ", item);
 
+    // Accessibility Fix: Wrap the interactive item in a semantic button element for keyboard focus
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "item-btn-wrapper";
+    btn.style.background = "none";
+    btn.style.border = "none";
+    btn.style.padding = "0";
+    btn.style.cursor = "pointer";
+
     const img = document.createElement("img"); //create the image element
     img.src = item.real; //Set the source of the image to the real image path
     img.classList.add("g-image"); //Add the g-image  class for styling
 
+    // Accessibility Fix: Provide clear alternative descriptive text labels dynamically
+    const readableName = getItemLabel(item.real);
+    img.alt = readableName + " preview";
+    btn.setAttribute("aria-label", "View interactive " + readableName);
+
     // console.log("Show item image real: " + item.real);
 
     // from real to sketch on enter
-    img.onmouseenter = function () {
+    btn.onmouseenter = function () {
       img.src = item.sketch;
     };
     // console.log("Sketch version: " + item.sketch);
 
     // from  sketch to real on leave
-    img.onmouseleave = function () {
+    btn.onmouseleave = function () {
       img.src = item.real;
     };
-    //put the image inside the container
-    container.appendChild(img);
+
+    // Accessibility Fix: Tie interactive hover actions to focus transitions for keyboard-only visitors
+    btn.onfocus = function () {
+      img.src = item.sketch;
+    };
+    btn.onblur = function () {
+      img.src = item.real;
+    };
+
+    //put the image inside the button container, then attach to the main grid view
+    btn.appendChild(img);
+    container.appendChild(btn);
   }
 }
 
@@ -139,5 +173,5 @@ document.getElementById("prev-Btn").addEventListener("click", () => {
   }
 });
 
-//  first  loading of images on the page
+//  first loading of images on the page
 showImages();
