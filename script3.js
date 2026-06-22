@@ -13,202 +13,191 @@ var wardrobepage2 = [
     weather: "Cold",
   },
   {
-    img: "images/resized/botttuta1-removebg-preview.png",
+    img: "images/Resized/botttuta1-removebg-preview.png",
     category: "Bottoms",
     weather: "Rainy",
   },
   {
-    img: "images/resized/coatrain-removebg-preview.png",
+    img: "images/Resized/coatrain-removebg-preview.png",
     category: "Outerwear",
     weather: "Rainy",
   },
   {
-    img: "images/resized/shirtwhite-removebg-preview.png",
+    img: "images/Resized/shirtwhite-removebg-preview.png",
     category: "Tops",
     weather: "Warm",
   },
   {
-    img: "images/resized/longsleevecasual-removebg-preview.png",
+    img: "images/Resized/longsleevecasual-removebg-preview.png",
     category: "Tops",
     weather: "Rainy",
   },
   {
-    img: "images/resized/Sweater-removebg-preview.png",
+    img: "images/Resized/Sweater-removebg-preview.png",
     category: "Tops",
     weather: "Cold",
   },
   {
-    img: "images/resized/jacketleather-removebg-preview.png",
+    img: "images/Resized/jacketleather-removebg-preview.png",
     category: "Outerwear",
     weather: "Cold",
   },
   {
-    img: "images/resized/jacketserious1-removebg-preview.png",
+    img: "images/Resized/jacketserious1-removebg-preview.png",
     category: "Outerwear",
     weather: "Warm",
   },
   {
-    img: "images/resized/longsleevesport-removebg-preview.png",
+    img: "images/Resized/longsleevesport-removebg-preview.png",
     category: "Tops",
     weather: "Rainy",
   },
   {
-    img: "images/resized/shortsearious-removebg-preview.png",
+    img: "images/Resized/shortsearious-removebg-preview.png",
     category: "Bottoms",
     weather: "Warm",
   },
   {
-    img: "images/resized/Hoodie-removebg-preview.png",
+    img: "images/Resized/Hoodie-removebg-preview.png",
     category: "Tops",
     weather: "Cold",
   },
   {
-    img: "images/resized/jacketjeans-removebg-preview.png",
+    img: "images/Resized/jacketjeans-removebg-preview.png",
     category: "Outerwear",
     weather: "Rainy",
   },
   {
-    img: "images/resized/shortj-removebg-preview.png",
+    img: "images/Resized/shortj-removebg-preview.png",
     category: "Bottoms",
     weather: "Warm",
   },
   {
-    img: "images/resized/bottjeans1-removebg-preview.png",
+    img: "images/Resized/bottjeans1-removebg-preview.png",
     category: "Bottoms",
     weather: "Rainy",
   },
   {
-    img: "images/resized/coatwinter-removebg-preview.png",
+    img: "images/Resized/coatwinter-removebg-preview.png",
     category: "Outerwear",
     weather: "Cold",
   },
   {
-    img: "images/resized/shoeswhite-removebg-preview.png",
+    img: "images/Resized/shoeswhite-removebg-preview.png",
     category: "Outerwear",
     weather: "Rainy",
   },
   {
-    img: "images/resized/bagheart-removebg-preview.png",
+    img: "images/Resized/bagheart-removebg-preview.png",
     category: "Outerwear",
     weather: "Warm",
   },
   {
-    img: "images/resized/shoesblack-removebg-preview.png",
+    img: "images/Resized/shoesblack-removebg-preview.png",
     category: "Outerwear",
     weather: "Cold",
   },
   {
-    img: "images/resized/blouse-removebg-preview.png",
+    img: "images/Resized/blouse-removebg-preview.png",
     category: "Tops",
     weather: "Rainy",
   },
   {
-    img: "images/resized/skirt-removebg-preview.png",
+    img: "images/Resized/skirt-removebg-preview.png",
     category: "Bottoms",
     weather: "Warm",
   },
   {
-    img: "images/resized/hoodieopen-removebg-preview.png",
-    category: "Outerwear",
-    weather: "Warm",
-  },
-
-  {
-    img: "images/resized/shoessandale-removebg-preview.png",
+    img: "images/Resized/hoodieopen-removebg-preview.png",
     category: "Outerwear",
     weather: "Warm",
   },
   {
-    img: "images/resized/dressopen-removebg-preview.png",
+    img: "images/Resized/shoessandale-removebg-preview.png",
+    category: "Outerwear",
+    weather: "Warm",
+  },
+  {
+    img: "images/Resized/dressopen-removebg-preview.png",
     category: "One piece",
     weather: "Warm",
   },
   {
-    img: "images/resized/botttutaser-removebg-preview.png",
+    img: "images/Resized/botttutaser-removebg-preview.png",
     category: "Bottoms",
     weather: "Cold",
   },
   {
-    img: "images/resized/skirtblue-removebg-preview.png",
+    img: "images/Resized/skirtblue-removebg-preview.png",
     category: "Bottoms",
     weather: "Warm",
   },
   {
-    img: "images/resized/coatsoft-removebg-preview.png",
+    img: "images/Resized/coatsoft-removebg-preview.png",
     category: "Outerwear",
     weather: "Warm",
   },
   {
-    img: "images/resized/tshirt2-removebg-preview.png",
+    img: "images/Resized/tshirt2-removebg-preview.png",
     category: "Tops",
     weather: "Warm",
   },
   {
-    img: "images/resized/sweaterknit-removebg-preview.png",
-    category: "Tops",
-    weather: "Cold",
-  },
-  {
-    img: "images/resized/Tshirtmusic-removebg-preview.png",
+    img: "images/Resized/Tshirtmusic-removebg-preview.png",
     category: "Tops",
     weather: "Warm",
   },
   {
-    img: "images/resized/Tshirtf1-removebg-preview.png",
+    img: "images/Resized/Tshirtf1-removebg-preview.png",
     category: "Tops",
     weather: "Warm",
   },
   {
-    img: "images/resized/shoestaka-removebg-preview.png",
+    img: "images/Resized/shoestaka-removebg-preview.png",
     category: "Outerwear",
     weather: "Warm",
   },
   {
-    img: "images/resized/bottWhiteJeans-removebg-preview.png",
+    img: "images/Resized/bottWhiteJeans-removebg-preview.png",
     category: "Bottoms",
     weather: "Warm",
   },
   {
-    img: "images/resized/logsleeveopen-removebg-preview.png",
+    img: "images/Resized/logsleeveopen-removebg-preview.png",
     category: "Tops",
     weather: "Rainy",
   },
   {
-    img: "images/resized/dressserious-removebg-preview.png",
+    img: "images/Resized/dressserious-removebg-preview.png",
     category: "One piece",
     weather: "Warm",
   },
   {
-    img: "images/resized/LinenBlousef1-removebg-preview.png",
+    img: "images/Resized/LinenBlousef1-removebg-preview.png",
     category: "Tops",
     weather: "Warm",
   },
   {
-    img: "images/resized/dresswinter-removebg-preview.png",
+    img: "images/Resized/dresswinter-removebg-preview.png",
     category: "One piece",
     weather: "Cold",
   },
   {
-    img: "images/resized/Jumpswit-removebg-preview.png",
+    img: "images/Resized/Jumpswit-removebg-preview.png",
     category: "One piece",
     weather: "Warm",
-  },
-  {
-    img: "images/resized/longsleevecasual-removebg-preview.png",
-    category: "Tops",
-    weather: "Rainy",
   },
 ];
 // console.log(wardrobepage2);
 
 // Helper helper function to clean text strings from paths dynamically for screen readers
 function getItemLabel(filename) {
-  const name = filename.split('/').pop().split('.').shift();
+  const name = filename.split("/").pop().split(".").shift();
   return name
-    .replace(/[_-]/g, ' ')
-    .replace(/preview|removebg|resized/gi, '')
+    .replace(/[_-]/g, " ")
+    .replace(/preview|removebg|resized/gi, "")
     .trim()
-    .replace(/\b\w/g, c => c.toUpperCase());
+    .replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
 // auto fit scaling function for the clothes layers
@@ -264,7 +253,7 @@ function showItems(list) {
     // Kept original class wrapper context intact
     const div = document.createElement("div");
     div.classList.add("item");
-    div.style.padding = "0"; 
+    div.style.padding = "0";
 
     // Accessibility Fix: Converted raw click targeting from an image to a semantic focusable button
     const btn = document.createElement("button");
@@ -285,7 +274,10 @@ function showItems(list) {
     // Accessibility Fix: Map descriptive readable alt values for screen reader contexts
     const readableTitle = getItemLabel(itemNow.img);
     img1.alt = readableTitle;
-    btn.setAttribute("aria-label", "Select and overlay " + readableTitle + " onto mannequin");
+    btn.setAttribute(
+      "aria-label",
+      "Select and overlay " + readableTitle + " onto mannequin",
+    );
 
     // Core functionality function extracted so both click and keyboard trigger it perfectly
     const handleOutfitSelection = function () {
