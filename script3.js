@@ -43,7 +43,7 @@ var wardrobepage2 = [
     weather: "Cold",
   },
   {
-    img: "images/Resized/jacketserious1-removebg-preview.png",
+    img: "images/Resized/Jacketserious1-removebg-preview.png",
     category: "Outerwear",
     weather: "Warm",
   },
